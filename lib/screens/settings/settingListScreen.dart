@@ -145,14 +145,7 @@ class _SettingListScreenState extends State<SettingListScreen> {
                           caption: 'Edit',
                           color: Colors.blue,
                           icon: Icons.edit,
-                          onTap: () async {
-                            await _openEditForm(filter);
-
-                            Scaffold.of(context).showSnackBar(SnackBar(
-                              content: Text('${widget.itemName} deleted'),
-                              duration: Duration(seconds: 2),
-                            ));
-                          },
+                          onTap: () => _openEditForm(filter),
                         ),
                         IconSlideAction(
                           caption: 'Delete',
