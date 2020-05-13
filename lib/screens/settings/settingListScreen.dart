@@ -211,6 +211,7 @@ class _AddItemFormState extends State<_AddItemForm> {
             children: <Widget>[
               TextFormField(
                 controller: formController,
+                autofocus: true,
                 validator: (value) {
                   if (value.isEmpty) {
                     return 'Please enter a value.';
